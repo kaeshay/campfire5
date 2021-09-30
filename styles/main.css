@@ -1,0 +1,50 @@
+body{
+	margin:0px;
+}
+#containment-wrapper{
+	width:8000px;
+	height:2700px;
+	background-color:#ffffff;
+	border:1px solid black;
+/*	filter:invert(1);*/
+}
+@keyframes blur {
+  from{filter:blur(0px);}
+  to{filter:blur(7px);}
+}
+@keyframes invert {
+  from{filter:invert(0);}
+  to{filter:invert(1);}
+}
+.item{
+	width:30px;
+}
+.medium-item{
+	width:180px;
+}
+.big-item{
+	width:200px;
+}
+.huge-item{
+	width:500px;
+}
+.avatar{
+	position:absolute;
+	width:70px;
+}
+.wide-avatar{
+	position:absolute;
+	width:120px;
+}
+.vehicle{
+	position:absolute;
+	width:180px;
+}
+.building{
+	position:absolute;
+	width:200px;
+}
+.place{
+	position:absolute;
+	width:800px;
+}

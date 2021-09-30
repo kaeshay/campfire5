@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campfire 5</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/positions.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body onLoad="window.scroll(1700,2000)">
+	<div id="containment-wrapper">
+		<!-- places -->
+		<img id="van-cort" src="assets/places/van-cort.png">
+		<div id="aristotleCity"">
+			<img class="city-item" src="assets/aristotle/clock-tower.png">
+			<img class="big-item" src="assets/aristotle/gold-building.png">
+			<img class="huge-item" src="assets/aristotle/green-building.png">
+			<img class="huge-item" src="assets/aristotle/hotel-buildings.png">
+			<img class="big-item" src="assets/aristotle/kubix-building.png">
+			<img class="big-item" src="assets/aristotle/red-building.png">
+			<img class="big-item" src="assets/aristotle/yellow-building.png">
+			<a href="pages/azizPoliceStation.html">
+			<img id="azizPoliceStation" class="big-item" src="assets/aziz/police-station.png"></a>
+			<img class="big-item" src="assets/aristotle/truck-car-track.png">
+		</div>
+		<a href="pages/ruiLibrary.html">
+		<img id="ruiLibrary" class="building" src="assets/rui/library.png"></a>
+		<a href="pages/azizBank.html">
+		<img id="azizBank" class="building" src="assets/aziz/bank.png"></a>
+
+		<!-- people and things -->
+		<a href="pages/fidelRoom.html">
+		<img id="draggable" class="avatar" src="assets/kay/fidel.png"></a>
+		<a href="pages/gigiRoom.html">
+		<img id="draggable" class="avatar" src="assets/kay/gigi.png"></a>
+		<a href="pages/rachelRoom.html">
+		<img id="draggable" class="avatar" src="assets/kay/rachel.png"></a>
+		<a href="file:///Users/kayliang/Desktop/campfire4/pages/bankerHouse.html">
+		<img id="draggable" class="avatar" src="assets/kay/banker1.png"></a>
+		<a href="file:///Users/kayliang/Documents/Home/Games/campfire/pages/joshua-tent.html">
+		<img id="draggable" class="item" src="assets/kay/fly.png"></a>
+		<a href="file:///Users/kayliang/Desktop/campfire2/pages/basement.html">
+		<img id="draggable" class="avatar" src="assets/kay/8.png">
+		<img id="draggable" class="avatar" src="assets/maria/tammy.png"></a>
+		<img id="draggable" class="avatar" src="assets/maria/magic-fly.png">
+		<img id="draggable" class="big-item" src="assets/maria/bench-couple.png">
+
+		<img id="draggable" class="avatar" src="assets/rui/mice1.png">
+		<a href="file:///Users/kayliang/Desktop/campfire4/pages/lizzyCity.html">
+		<img id="draggable" class="avatar" src="assets/aziz/lizzy.png"></a>
+		<img id="draggable" class="avatar" src="assets/aristotle/aristotle.png">
+
+		<!-- 2021-9-28 -->
+		<img id="draggable" class="building" src="assets/aziz/bad-guys.png">
+		<img id="draggable" class="avatar" src="assets/aziz/frog.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/police-copter.png">
+		<img id="draggable" class="avatar" src="assets/kay/leaf1.png">
+		<a href="pages/bugQueen.html">
+		<img id="draggable" class="avatar" src="assets/kay/leaf2.png"></a>
+		<img id="draggable" class="avatar" src="assets/kay/leaf3.png">
+
+
+
+
+		<!-- see-through places -->
+		<img id="apartment" class="place" src="assets/places/apartment/apartment.png">
+	</div>
+	<div id="toolbox">
+		<a href="pages/spinTheWheel.html">
+		<img id="spinButton" class="tool" src="assets/tools/wheel-small.png"></a>
+		<img id="lightButton" class="tool" onclick="lightOff()" src="assets/tools/bulb.png">
+		<a href="assets/tools/schedule-big.png">
+		<img id="scheduleButton" class="tool" src="assets/tools/schedule.png"></a>
+		<img id="slowButton" class="tool" onclick="slowDown()" src="assets/tools/slow-button.png">
+		<img id="azizRainCloud" ondrag="enlarge('azizRainCloud')" class="draggable tool" src="assets/aziz/rain-cloud.png">
+	</div>
+</body>
+<script type="text/javascript" src="scripts/draggable.js"></script>
+<script type="text/javascript" src="scripts/automate.js"></script>
+<script type="text/javascript" src="scripts/toggle.js"></script>
+<script type="text/javascript" src="scripts/tools.js"></script>
+</html>
