@@ -27,17 +27,40 @@
   position:absolute;
   top:2100px;
   left:2800px;
-  width:2200px;
+  width:5000px;
 /*  border:1px solid black;*/
 }
 #aristotleCity img{
   margin:-20px;
 }
-#ruiLibrary{
-  top:2100px;
-  left:1800px;
+#helicopter{
+  left:402px;
+  top:1320px;
 }
-#azizBank{
-  top:2100px;
-  left:1500px;
+#aristotleRoad{
+  width:2000px;
+}
+#lizzys{
+  width:2000px;
+  height:auto;
+  border:2px solid black;
+}
+.lizzyClone{
+  width:60px;
+}
+#leftCity{
+  position:absolute;
+  width:2000px;
+  top:2200px;
+  height:400px;
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:flex-start;
+}
+#leftCity img{
+  margin:-10px;
+  margin-top:auto
+}
+#leftCity a{
+  margin-top:auto;
 }

@@ -23,11 +23,21 @@
 			<a href="pages/azizPoliceStation.html">
 			<img id="azizPoliceStation" class="big-item" src="assets/aziz/police-station.png"></a>
 			<img class="big-item" src="assets/aristotle/truck-car-track.png">
+			<img class="huge-item" src="assets/aristotle/truck-building.png">
+			<img id="aristotleRoads" src="assets/aristotle/four-roads.png">
 		</div>
-		<a href="pages/ruiLibrary.html">
-		<img id="ruiLibrary" class="building" src="assets/rui/library.png"></a>
-		<a href="pages/azizBank.html">
-		<img id="azizBank" class="building" src="assets/aziz/bank.png"></a>
+		<div id="leftCity">
+			<a href="pages/ruiLibrary.html">
+			<img id="ruiLibrary" class="big-item" src="assets/rui/library.png"></a>
+			<a href="pages/azizBank.html">
+			<img id="azizBank" class="big-item" src="assets/aziz/bank.png"></a>
+			<img id="groceryStore" class="big-item" src="assets/aziz/grocery-store.png">
+			<a href="pages/georgieHouse.html">
+			<img class="big-item" src="assets/aziz/georgie-house.png"></a>
+			<img class="huge-item" src="assets/aristotle/red-building2.png">
+			<img class="huge-item" src="assets/aristotle/finger-buildings.png">
+		</div>
+		
 
 		<!-- people and things -->
 		<a href="pages/fidelRoom.html">
@@ -48,7 +58,7 @@
 
 		<img id="draggable" class="avatar" src="assets/rui/mice1.png">
 		<a href="file:///Users/kayliang/Desktop/campfire4/pages/lizzyCity.html">
-		<img id="draggable" class="avatar" src="assets/aziz/lizzy.png"></a>
+		<img id="draggable" class="lizzy avatar" src="assets/aziz/lizzy.png"></a>
 		<img id="draggable" class="avatar" src="assets/aristotle/aristotle.png">
 
 		<!-- 2021-9-28 -->
@@ -60,11 +70,34 @@
 		<img id="draggable" class="avatar" src="assets/kay/leaf2.png"></a>
 		<img id="draggable" class="avatar" src="assets/kay/leaf3.png">
 
+		<!-- 2021-10-3 -->
+		<img id="draggable" class="building" src="assets/aristotle/truck1.png">
+		<img id="draggable" class="building" src="assets/aristotle/truck2.png">
+		<a href="assets/rui/gumball-robbers-big.png">
+		<img id="draggable" class="building" src="assets/rui/gumball-robbers.png"></a>
+		<img id="draggable" class="vehicle" src="assets/aziz/blue-pet.png">
+		<img id="draggable" class="avatar" ondblclick="playSound('cd1')" src="assets/aziz/cd1.png">
+		<img id="draggable" class="avatar" ondblclick="playSound('cd2')" src="assets/aziz/cd2.png">
+		<audio id="cd1" src="assets/kay/fedteen-training.mp3"></audio>
+		<audio id="cd2" src="assets/kay/omari.mp3"></audio>
+
+		<!-- 2021-10-4 -->
+		<img id="draggable" class="vehicle" src="assets/rui/volcano-figure.png">
+		<img id="draggable" class="avatar" src="assets/rui/hermi.png">
+
+		<!-- 2021-10-5 -->
+		<img id="draggable" class="wide-avatar" src="assets/kay/crayon-crawler.png">
+		<img id="draggable" class="wide-avatar" src="assets/kay/monster-mom.png">
+		<img id="draggable" class="avatar" src="assets/kay/monster-teen-backpack.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/lamborgini.png">
+		<img id="draggable" class="avatar" ondblclick="playSound('cd3')" src="assets/aristotle/cd3.png">
+		<audio id="cd3" src="assets/aristotle/sharknado.mp3"></audio>
 
 
 
 		<!-- see-through places -->
 		<img id="apartment" class="place" src="assets/places/apartment/apartment.png">
+		<img id="helicopter" ondblclick="transformId('aziz','helicopter')" class="draggable building" src="assets/aziz/helicopter1.png">
 	</div>
 	<div id="toolbox">
 		<a href="pages/spinTheWheel.html">
@@ -74,6 +107,9 @@
 		<img id="scheduleButton" class="tool" src="assets/tools/schedule.png"></a>
 		<img id="slowButton" class="tool" onclick="slowDown()" src="assets/tools/slow-button.png">
 		<img id="azizRainCloud" ondrag="enlarge('azizRainCloud')" class="draggable tool" src="assets/aziz/rain-cloud.png">
+		<img id="azizRadio" ondrag="enlarge('azizRadio')" class="draggable tool" src="assets/aziz/radio.png">
+		<img id="lizzyStamp" ondrag="enlarge('lizzyStamp')" class="draggable tool" src="assets/aziz/lizzy-stamp.png">
+
 	</div>
 </body>
 <script type="text/javascript" src="scripts/draggable.js"></script>
