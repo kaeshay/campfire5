@@ -47,3 +47,24 @@ function showInventory(idString){
 		showCounter=0;
 	}
 }
+
+var optimusCounter=0
+function transformOptimus(){
+	element=document.getElementsByClassName("optimus")[0];
+	if(optimusCounter==0){
+		element.src="assets/eitan/optimus2.png";
+		optimusCounter++;
+	} else if(optimusCounter==1){
+		element.src="assets/eitan/optimus3.png";
+		optimusCounter++;
+	} else if(optimusCounter==2){
+		element.src="assets/eitan/optimus4.png";
+		optimusCounter++;
+	} else if(optimusCounter==3){
+		element.src="assets/eitan/optimus5.png";
+		optimusCounter++;
+	} else if(optimusCounter==4){
+		element.src="assets/eitan/optimus1.png";
+		optimusCounter=0;
+	}
+}
