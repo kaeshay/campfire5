@@ -1,11 +1,14 @@
 body{
 	margin:0px;
 }
+.canvas{
+  width:8000px;
+}
+
 #containment-wrapper{
-	width:8000px;
-	height:2700px;
 	background-color:#ffffff;
 	border:1px solid black;
+	height:3000px;
 /*	filter:invert(1);*/
 }
 @keyframes blur {

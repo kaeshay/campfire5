@@ -13,6 +13,18 @@
 #toolbox img{
   margin-left:10px;
 }
+#outerspace{
+  background-color:#0D67CF;
+/*  border:2px solid;*/
+  background-image: url('../assets/aziz/outerspace.png');
+  background-repeat: repeat;
+  height:200px;
+}
+#skyBelt{
+ /* background: black;*/
+  background-image:url('../assets/aziz/skybelt.png');
+  height:1000px;
+}
 #van-cort{
 	position:absolute;
 	left:500px;
@@ -63,4 +75,19 @@
 }
 #leftCity a{
   margin-top:auto;
+}
+#trafficJam{
+/*  border:2px solid black;*/
+  position:absolute;
+  left:5838px;
+  top:2175px;
+  width:1200px;
+}
+#azizRainbow{
+  left:800px;
+  top:500px;
+}
+#azizMoon{
+  top:100px;
+  left:100px;
 }

@@ -9,9 +9,13 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 </head>
 <body onLoad="window.scroll(1700,2000)">
-	<div id="containment-wrapper">
+	<div id="containment-wrapper" class="canvas">
 		<!-- places -->
+		<div id="outerspace" class="canvas"></div>
+		<div id="skyBelt" class="canvas"></div>
+		<img id="azizRainbow" class="place" src="assets/aziz/rainbow.png">
 		<img id="van-cort" src="assets/places/van-cort.png">
+		<img id="azizMoon" class="draggable building" src="assets/aziz/moon.png">
 		<div id="aristotleCity">
 			<img class="city-item" src="assets/aristotle/clock-tower.png">
 			<img class="big-item" src="assets/aristotle/gold-building.png">
@@ -24,11 +28,9 @@
 			<img id="azizPoliceStation" class="big-item" src="assets/aziz/police-station.png"></a>
 			<img class="big-item" src="assets/aristotle/truck-car-track.png">
 			<img class="huge-item" src="assets/aristotle/truck-building.png">
+			<img class="huge-item" src="assets/aristotle/red-track.png">
 			<img id="aristotleRoads" src="assets/aristotle/four-roads.png">
-			<!-- 2021-10-14 -->
-			<img id="fence" class="huge-item" src="assets/maria/fence.png">
-			<img id="restaurant" class="huge-item" src="assets/eli/restaurant.png">
-			<img id="road" class="huge-item" src="assets/eli/road.png">
+			<img id="aristotleRoads" src="assets/aristotle/four-roads.png">
 		</div>
 		<div id="leftCity">
 			<a href="pages/ruiLibrary.html">
@@ -44,8 +46,9 @@
 			<img class="big-item" src="assets/rui/volcanoHouse.png"></a>
 			<img class="draggable big-item" src="assets/rui/volcano-copter.png">
 		</div>
+		<div id="trafficJam">
+		</div>
 		
-
 		<!-- people and things -->
 		<a href="pages/fidelRoom.html">
 		<img id="draggable" class="avatar" src="assets/kay/fidel.png"></a>
@@ -61,7 +64,7 @@
 		<img id="draggable" class="avatar" src="assets/kay/8.png">
 		<img id="draggable" class="avatar" src="assets/maria/tammy.png"></a>
 		<img id="draggable" class="avatar" src="assets/maria/magic-fly.png">
-		<img id="draggable" class="big-item" src="assets/maria/bench-couple.png">
+		<img id="draggable" class="building" src="assets/maria/bench-couple.png">
 
 		<img id="draggable" class="avatar" src="assets/rui/mice1.png">
 		<a href="file:///Users/kayliang/Desktop/campfire4/pages/lizzyCity.html">
@@ -141,25 +144,23 @@
 		<img id="draggable" class="building" src="assets/aristotle/shark-catcher.png">
 		<img id="draggable" class="building" src="assets/rui/ufo.png">
 
-		<!-- 2021-10-14 -->
-		<img id="draggable" class="wide-avatar" src="assets/maria/money.png">
-		<img id="draggable" class="wide-avatar" src="assets/eli/money.png">
-		<img id="draggable" class="wide-avatar" src="assets/eli/money.png">
-		<img id="draggable" class="wide-avatar" src="assets/eli/scissor.png">
-		<img id="draggable" class="wide-avatar" src="assets/eli/campfire-badge.png">
-		<img id="draggable" class="wide-avatar" src="assets/eli/money.png">
-		<img id="draggable" class="wide-avatar" src="assets/eli/coin.png">
-		<img id="draggable" class="wide-avatar" src="assets/noah/tracker-n.png">
-		<img id="draggable" class="wide-avatar" src="assets/noah/ninja.png">
-		<img id="draggable" class="item" src="assets/eitan/tracker1.png">
-		<img id="draggable" class="item" src="assets/eitan/tracker2.png">
-		<img id="draggable" class="item" src="assets/eitan/tracker3.png">
-		<img id="draggable" class="wide-avatar" src="assets/eitan/tracker4.png">
-		<img id="draggable" class="building" src="assets/eitan/big-transformer.png">
-		<img id="draggable" class="item" src="assets/eitan/tracker1.png">
-		<img id="draggable" ondblclick="transformClass('eitan','hover')" class="hover vehicle" src="assets/eitan/hover1.png">
-		<img id="draggable" ondblclick="transformClass('eitan','eagle')" class="eagle vehicle" src="assets/eitan/eagle1.png">
-		<img id="draggable" ondblclick="transformClass('eitan','cassette')" class="cassette vehicle" src="assets/eitan/cassette1.png">
+		<!-- 2021-10-17 -->
+		<img id="draggable" class="avatar" src="assets/aziz/orange-dino.png">
+		<img id="draggable" class="building" src="assets/rui/monster-bull.png">
+		<img id="draggable" class="place" src="assets/rui/invisible-monster.png">
+
+		<!-- 2021-10-17 -->
+		<img id="draggable" class="building" src="assets/rui/monster-ha.png">
+		<img id="draggable" class="building" src="assets/aristotle/yellow-truck-car.png">
+		<img id="draggable" class="building" src="assets/aristotle/black-truck-car.png">
+		<img id="draggable" class="wide-avatar" src="assets/aziz/poop.png">
+		<img id="draggable" class="wide-avatar" src="assets/aristotle/roblox.png">
+		<img id="draggable" class="wide-avatar" src="assets/aristotle/roblox-eight1.png">
+		<img id="draggable" class="wide-avatar" src="assets/aristotle/roblox4.png">
+		<img id="draggable" class="wide-avatar" src="assets/aristotle/roblox2.png">
+		<img id="draggable" class="wide-avatar" src="assets/aristotle/roblox8.png">
+
+
 
 
 		<!-- see-through places -->
@@ -178,6 +179,9 @@
 		<img id="azizRadio" ondrag="enlarge('azizRadio')" class="draggable tool" src="assets/aziz/radio.png">
 		<img id="lizzyStamp" ondrag="enlarge('lizzyStamp')" class="draggable tool" src="assets/aziz/lizzy-stamp.png">
 		<img id="penButton" ondrag="enlarge('penButton')" class="draggable tool" src="assets/aziz/pen.png">
+		<img id="sunglasses" class="draggable tool" src="assets/aziz/sunglasses.png">
+		<img id="sunglasses" class="draggable tool" src="assets/aziz/skateboard.png">
+		<img id="spiderman-phone" class="draggable tool" ondblclick="transformId('aziz','spiderman-phone')" ondrag="enlarge('spiderman-phone')" src="assets/aziz/spiderman-phone1.png">
 
 	</div>
 </body>

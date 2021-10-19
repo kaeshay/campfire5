@@ -36,3 +36,8 @@ document.getElementById('containment-wrapper').onclick = function clickEvent(e) 
 			document.getElementById('containment-wrapper').appendChild(img);
 		})
 	}
+
+for (var i=1;i<12;i++){
+	document.getElementById('trafficJam').innerHTML+=
+	'<img class="draggable big-item" src="assets/traffic/'+i+'.png">'
+}
