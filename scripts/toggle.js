@@ -68,3 +68,39 @@ function transformOptimus(){
 		optimusCounter=0;
 	}
 }
+
+var spideyCounter=0
+function transformSpidey(){
+	element=document.getElementsByClassName("spidey")[0];
+	if(spideyCounter==0){
+		element.src="assets/aziz/spidey2.png";
+		spideyCounter++;
+	} else if(spideyCounter==1){
+		element.src="assets/aziz/spidey3.png";
+		spideyCounter++;
+	} else if(spideyCounter==2){
+		element.src="assets/aziz/spidey4.png";
+		spideyCounter++;
+	} else if(spideyCounter==3){
+		element.src="assets/aziz/spidey5.png";
+		spideyCounter++;
+	} else if(spideyCounter==4){
+		element.src="assets/aziz/spidey6.png";
+		spideyCounter++;
+	} else if(spideyCounter==5){
+		element.src="assets/aziz/spidey7.png";
+		spideyCounter++;
+	} else if(spideyCounter==6){
+		element.src="assets/aziz/spidey8.png";
+		spideyCounter++;
+	} else if(spideyCounter==7){
+		element.src="assets/aziz/spidey9.png";
+		spideyCounter++;
+	} else if(spideyCounter==8){
+		element.src="assets/aziz/spidey10.png";
+		spideyCounter++;
+	} else if(spideyCounter==9){
+		element.src="assets/aziz/spidey1.png";
+		spideyCounter=0;
+	} 
+}

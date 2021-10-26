@@ -13,6 +13,7 @@
 #toolbox img{
   margin-left:10px;
 }
+
 #outerspace{
   background-color:#0D67CF;
 /*  border:2px solid;*/
@@ -25,6 +26,24 @@
   background-image:url('../assets/aziz/skybelt.png');
   height:1000px;
 }
+#beach{
+  position:absolute;
+  top:2870px;
+  background-image:url('../assets/aziz/beach.png');
+  height:500px;
+}
+#ocean-back{
+  position:absolute;
+  top:3300px;
+  background-image:url('../assets/aziz/ocean-background.jpg');
+  height:1000px;
+}
+#ocean{
+  position:absolute;
+  top:3000px;
+  background-image:url('../assets/aziz/ocean.png');
+  height:1000px;
+}
 #van-cort{
 	position:absolute;
 	left:500px;
@@ -35,6 +54,12 @@
 	left:2000px;
 	pointer-events:none;
 }
+#azizApartment{
+  top:2750px;
+  left:1900px;
+  width:500px;
+  pointer-events:none;
+}
 #aristotleCity{
   position:absolute;
   top:2100px;
@@ -44,6 +69,7 @@
 }
 #aristotleCity img{
   margin:-20px;
+  margin-top:50px;
 }
 #helicopter{
   left:402px;
@@ -70,8 +96,9 @@
   align-items:flex-start;
 }
 #leftCity img{
-  margin:-10px;
-  margin-top:auto
+  margin:-20px;
+  margin-top:auto;
+ 
 }
 #leftCity a{
   margin-top:auto;
