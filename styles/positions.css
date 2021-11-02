@@ -118,3 +118,47 @@
   top:100px;
   left:100px;
 }
+#azizAirport{
+  top:1300px;
+  left:100px;
+  width:400px;
+}
+#treasureMoney{
+  /*border:2px solid black;*/
+  width:100px;
+  height:100px;
+  display:none;
+}
+#treasureMoney img{
+  margin:-10px;
+  top:50px;
+}
+#azizMaze{
+  left:6580px;
+  top:1280px;
+  width:1500px;
+}
+#planetYoutube{
+  left:3122px;
+  top:395px;
+}
+#starBuilding{
+  top:1066px;
+  left:4309px;
+}
+#starFurniture{
+  left:4039px;
+  top:1994px;
+}
+#buildingGuy{
+  left:4335px;
+  top:16px;
+}
+#azizTower{
+  left:4139px;
+  top:-127px;
+}
+#azizRamp{
+  left:7962px;
+  top:1415px;
+}

@@ -104,3 +104,17 @@ function transformSpidey(){
 		spideyCounter=0;
 	} 
 }
+var treasureCounter=0;
+function transformTreasure(){
+	treasure=document.getElementsByClassName('treasure')[0];
+	money=document.getElementById('treasureMoney');
+	if(treasureCounter==0){
+		treasure.src="assets/aziz/treasure2.png";
+		money.style.display='block';
+		treasureCounter++;
+	} else if(treasureCounter==1){
+		treasure.src="assets/aziz/treasure1.png";
+		money.style.display='none';
+		treasureCounter=0;
+	} 
+}

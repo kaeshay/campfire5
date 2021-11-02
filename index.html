@@ -19,6 +19,17 @@
 		<img id="azizRainbow" class="place" src="assets/aziz/rainbow.png">
 		<img id="van-cort" src="assets/places/van-cort2.png">
 		<img id="azizMoon" class="draggable building" src="assets/aziz/moon.png">
+		<img id="azizAirport" class="building" src="assets/aziz/airport.png">
+		<img id="azizMaze" class="place" src="assets/aziz/maze.png">
+		<a href="pages/starBuilding.html">
+		<img id="starBuilding" class="draggable building" src="assets/aziz/star-building.png"></a>
+		<img id="starFurniture" class="draggable place" src="assets/rui/star-furniture.png">
+		<a href="assets/rui/youtube1.png">
+		<img id="planetYoutube" class="building" src="assets/kay/planet-youtube.png"></a>
+		<img id="buildingGuy" class="draggable place" src="assets/rui/building-guy.png">
+		<a href="pages/azizTower.html">
+		<img id="azizTower" class="building" src="assets/aziz/tower.png"></a>
+		<img id="azizRamp" class="draggable place" src="assets/aziz/ramp.png">
 		<div id="aristotleCity">
 			<img class="city-item" src="assets/aristotle/clock-tower.png">
 			<img class="big-item" src="assets/aristotle/gold-building.png">
@@ -36,6 +47,13 @@
 			<img id="aristotleRoads" src="assets/aristotle/four-roads.png">
 			<a href="pages/ghostHouse.html">
 			<img class="big-item" src="assets/rui/ghost-house.png"></a>
+			<a href="pages/azizLibrary.html">
+			<img class="big-item" src="assets/aziz/library.png"></a>
+			<a href="pages/azizBank2.html">
+			<img class="big-item" src="assets/aziz/bank2.png"></a>
+			<img class="big-item" src="assets/aziz/cylinder-blocks.png">
+			<a href="pages/azizMuseum.html">
+			<img class="big-item" src="assets/aziz/museum.png"></a>
 		</div>
 		<div id="leftCity">
 			<a href="pages/ruiLibrary.html">
@@ -74,7 +92,7 @@
 		<img id="draggable" class="avatar" src="assets/rui/mice1.png">
 		<a href="file:///Users/kayliang/Desktop/campfire4/pages/lizzyCity.html">
 		<img id="draggable" class="lizzy avatar" src="assets/aziz/lizzy.png"></a>
-		<img id="draggable" class="avatar" src="assets/aristotle/aristotle.png">
+		<img id="draggable" class="aristotle wide-avatar" ondblclick="transformClass('aristotle','aristotle')" src="assets/aristotle/aristotle1.png">
 
 		<!-- 2021-9-28 -->
 		<img id="draggable" class="building" src="assets/aziz/bad-guys.png">
@@ -180,6 +198,40 @@
 
 		<!-- 2021-10-26 -->
 		<img id="draggable" class="building" src="assets/rui/serpent.png">
+		<img id="draggable" class="airplane building" ondblclick="transformClass('aziz','airplane')" src="assets/aziz/airplane1.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/penguin-bankers.png">
+
+		<div id="draggable" ondblclick="transformTreasure()" class="wide-avatar">
+			<img class="wide-avatar treasure" src="assets/aziz/treasure1.png">
+			<div id="treasureMoney">
+				<img class="draggable item" src="assets/aziz/coin.png">
+				<img class="draggable item" src="assets/aziz/coin.png">
+				<img class="draggable item" src="assets/aziz/cash1.png">
+				<img class="draggable item" src="assets/aziz/cash2.png">
+				<img class="draggable item" src="assets/aziz/coin.png">
+				<img class="draggable item" src="assets/aziz/coin.png">
+				<img class="draggable item" src="assets/aziz/cash1.png">
+				<img class="draggable item" src="assets/aziz/cash2.png">
+			</div>
+		</div>
+		<a href="assets/aziz/treasure-map.png">
+		<img id="draggable" class="wide-avatar" src="assets/aziz/treasure-map.png"></a>
+		<img id="draggable" class="vehicle" src="assets/aziz/diahrrea.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/green-car-limo.png">
+
+		<!-- 2021/10/31 -->
+		<img id="draggable" class="vehicle" src="assets/aristotle/bumblebee-mask.png">
+		<img id="draggable" ondblclick="transformClass('aziz','glow-bunny')" class="avatar glow-bunny" src="assets/aziz/glow-bunny1.png">
+		<img id="draggable" class="building" src="assets/rui/robot-helpers.png">
+
+		<!-- 2021/11/2 -->
+		<img id="draggable" class="avatar" src="assets/rui/ceramic1.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/ceramic2.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/ceramic3.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/ceramic4.png">
+		<img id="draggable" class="wide-avatar" src="assets/aziz/ninja.png">
+		<img id="draggable" ondblclick="transformClass('aziz','chocolate-bar')" class="avatar chocolate-bar" src="assets/aziz/chocolate-bar1.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/police-car2.png">
 
 		<!-- see-through places -->
 		<img id="apartment" class="place" src="assets/places/apartment/apartment.png">
@@ -200,7 +252,10 @@
 		<img id="penButton" ondrag="enlarge('penButton')" class="draggable tool" src="assets/aziz/pen.png">
 		<img id="sunglasses" class="draggable tool" src="assets/aziz/sunglasses.png">
 		<img id="sunglasses" class="draggable tool" src="assets/aziz/skateboard.png">
+		<img id="poop-sucker" class="draggable tool" ondrag="enlarge('poop-sucker')" src="assets/aziz/poop-sucker.png">
+		<img id="complaint" class="draggable tool" ondrag="enlarge('complaint')" src="assets/aziz/letter-of-complaint.png">
 		<img id="spiderman-phone" class="draggable tool" ondblclick="transformId('aziz','spiderman-phone')" ondrag="enlarge('spiderman-phone')" src="assets/aziz/spiderman-phone1.png">
+		<img id="azizWhirlyCloud" ondrag="enlarge('azizWhirlyCloud')" class="draggable tool" src="assets/aziz/whirly-cloud.png">
 
 	</div>
 </body>
